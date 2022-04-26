@@ -711,7 +711,7 @@ GameObject:
   - component: {fileID: 584483552}
   - component: {fileID: 584483551}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ControlsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -951,6 +951,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f07451f4d457f684da769a59176575f2, type: 3}
+--- !u!1 &692859487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f07451f4d457f684da769a59176575f2, type: 3}
+  m_PrefabInstance: {fileID: 692859486}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &692859488
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692859487}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010163852, y: 0.010304443, z: 0.009962074}
+  m_Center: {x: -0.00008190824, y: 0.00015222163, z: -0.000019036943}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,7 +2119,7 @@ GameObject:
   - component: {fileID: 2002458104}
   - component: {fileID: 2002458103}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PriceDifference
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
