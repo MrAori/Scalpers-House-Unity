@@ -26,20 +26,23 @@ public class PlayerRaycasting : MonoBehaviour
             {
                 Debug.Log("Pressed primary button.");
 
-                if (whatIHit.collider.name.Equals("OtherCylinder"))
+                if (whatIHit.collider.name.Equals("TVBox"))
                 {
-                    GameObject.Find("PriceDifference").GetComponent<Text>().text = "Price: $200";
+                    GameObject.Find("OldPrice").GetComponent<Text>().text = "Was: $200";
+                    GameObject.Find("NewPrice").GetComponent<Text>().text = "Now: $700";
                 }
                 else if (whatIHit.collider.name.Equals("Cylinder"))
                 {
-                    GameObject.Find("PriceDifference").GetComponent<Text>().text = "Price: $100";
+                    GameObject.Find("OldPrice").GetComponent<Text>().text = "Was: $200";
+                    GameObject.Find("NewPrice").GetComponent<Text>().text = "Now: $700";
                 }
 
             }
         }
         else
         {
-            GameObject.Find("PriceDifference").GetComponent<Text>().text = "";
+            GameObject.Find("OldPrice").GetComponent<Text>().text = "";
+            GameObject.Find("NewPrice").GetComponent<Text>().text = "";
         }
     }
 }
