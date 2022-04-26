@@ -59,7 +59,7 @@ public class PlayerRaycasting : MonoBehaviour
                     GameObject.Find("OldPrice").GetComponent<Text>().text = "Was: $499";
                     GameObject.Find("NewPrice").GetComponent<Text>().text = "Now: $899";
                 }
-                else if (whatIHit.collider.name.Equals("BBOXBox"))
+                else if (whatIHit.collider.name.Equals("GPUBox"))
                 {
                     GameObject.Find("OldPrice").GetComponent<Text>().text = "Was: $699";
                     GameObject.Find("NewPrice").GetComponent<Text>().text = "Now: $1,099";
