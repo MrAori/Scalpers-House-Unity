@@ -74,6 +74,17 @@ public class PlayerRaycasting : MonoBehaviour
                     GameObject.Find("OldPrice").GetComponent<Text>().text = "Was: $999";
                     GameObject.Find("NewPrice").GetComponent<Text>().text = "Now: $1,499";
                 }
+                //Since the text may stay when looking at the selfs, we need this as a workaround
+                else if (whatIHit.collider.name.Equals("RightShelf"))
+                {
+                    GameObject.Find("OldPrice").GetComponent<Text>().text = "";
+                    GameObject.Find("NewPrice").GetComponent<Text>().text = "";
+                }
+                else if (whatIHit.collider.name.Equals("LeftShelf"))
+                {
+                    GameObject.Find("OldPrice").GetComponent<Text>().text = "";
+                    GameObject.Find("NewPrice").GetComponent<Text>().text = "";
+                }
 
             }
         }
