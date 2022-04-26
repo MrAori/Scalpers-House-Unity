@@ -28,18 +28,18 @@ public class PlayerRaycasting : MonoBehaviour
 
                 if (whatIHit.collider.name.Equals("OtherCylinder"))
                 {
-                    GameObject.Find("Text").GetComponent<Text>().text = "Price: $200";
+                    GameObject.Find("PriceDifference").GetComponent<Text>().text = "Price: $200";
                 }
                 else if (whatIHit.collider.name.Equals("Cylinder"))
                 {
-                    GameObject.Find("Text").GetComponent<Text>().text = "Price: $100";
+                    GameObject.Find("PriceDifference").GetComponent<Text>().text = "Price: $100";
                 }
 
             }
         }
         else
         {
-            GameObject.Find("Text").GetComponent<Text>().text = "";
+            GameObject.Find("PriceDifference").GetComponent<Text>().text = "";
         }
     }
 }
