@@ -30,60 +30,60 @@ public class PlayerRaycasting : MonoBehaviour
                 //Left Shelf Prices
                 if (whatIHit.collider.name.Equals("TVBox"))
                 {
-                    GameObject.Find("OldPrice").GetComponent<Text>().text = "Was: $350";
-                    GameObject.Find("NewPrice").GetComponent<Text>().text = "Now: $780";
+                    GameObject.Find("ProductTitle").GetComponent<Text>().text = "Sam & Co Bravo Television";
+                    GameObject.Find("ProductPrice").GetComponent<Text>().text = "Was: $350\nNow: $780";
                 }
                 else if (whatIHit.collider.name.Equals("PrinterBox"))
                 {
-                    GameObject.Find("OldPrice").GetComponent<Text>().text = "Was: $200";
-                    GameObject.Find("NewPrice").GetComponent<Text>().text = "Now: $450";
+                    GameObject.Find("ProductTitle").GetComponent<Text>().text = "SG LaserJet (5400x Model)";
+                    GameObject.Find("ProductPrice").GetComponent<Text>().text = "Was: $200\nNow: $450";
                 }
                 else if (whatIHit.collider.name.Equals("StartFactoryBox"))
                 {
-                    GameObject.Find("OldPrice").GetComponent<Text>().text = "Was: $200";
-                    GameObject.Find("NewPrice").GetComponent<Text>().text = "Now: $600";
+                    GameObject.Find("ProductTitle").GetComponent<Text>().text = "NONY StartFactory";
+                    GameObject.Find("ProductPrice").GetComponent<Text>().text = "Was: $200\nNow: $600";
                 }
                 else if (whatIHit.collider.name.Equals("PortableConsoleBox"))
                 {
-                    GameObject.Find("OldPrice").GetComponent<Text>().text = "Was: $130";
-                    GameObject.Find("NewPrice").GetComponent<Text>().text = "Now: $380";
+                    GameObject.Find("ProductTitle").GetComponent<Text>().text = "NONY Nova Portable";
+                    GameObject.Find("ProductPrice").GetComponent<Text>().text = "Was: $130\nNow: $380";
                 }
                 //Right Shelf Prices
                 else if (whatIHit.collider.name.Equals("SSDBox"))
                 {
-                    GameObject.Find("OldPrice").GetComponent<Text>().text = "Was: $99";
-                    GameObject.Find("NewPrice").GetComponent<Text>().text = "Now: $299";
+                    GameObject.Find("ProductTitle").GetComponent<Text>().text = "Sam & Co SSD (1TB)";
+                    GameObject.Find("ProductPrice").GetComponent<Text>().text = "Was: $99\nNow: $299";
                 }
                 else if (whatIHit.collider.name.Equals("BBOXBox"))
                 {
-                    GameObject.Find("OldPrice").GetComponent<Text>().text = "Was: $499";
-                    GameObject.Find("NewPrice").GetComponent<Text>().text = "Now: $899";
+                    GameObject.Find("ProductTitle").GetComponent<Text>().text = "BBOX 2.0";
+                    GameObject.Find("ProductPrice").GetComponent<Text>().text = "Was: $499\nNow: $899";
                 }
                 else if (whatIHit.collider.name.Equals("GPUBox"))
                 {
-                    GameObject.Find("OldPrice").GetComponent<Text>().text = "Was: $699";
-                    GameObject.Find("NewPrice").GetComponent<Text>().text = "Now: $1,099";
+                    GameObject.Find("ProductTitle").GetComponent<Text>().text = "XLB SILVER (8GB)";
+                    GameObject.Find("ProductPrice").GetComponent<Text>().text = "Was: $699\nNow: $1,099";
                 }
                 else if (whatIHit.collider.name.Equals("MicrowaveBox"))
                 {
-                    GameObject.Find("OldPrice").GetComponent<Text>().text = "Was: $149";
-                    GameObject.Find("NewPrice").GetComponent<Text>().text = "Now: $399";
+                    GameObject.Find("ProductTitle").GetComponent<Text>().text = "Johnsons Microwave";
+                    GameObject.Find("ProductPrice").GetComponent<Text>().text = "Was: $149\nNow: $399";
                 }
                 else if (whatIHit.collider.name.Equals("eDonaldBox"))
                 {
-                    GameObject.Find("OldPrice").GetComponent<Text>().text = "Was: $999";
-                    GameObject.Find("NewPrice").GetComponent<Text>().text = "Now: $1,499";
+                    GameObject.Find("ProductTitle").GetComponent<Text>().text = "Maple eDonald";
+                    GameObject.Find("ProductPrice").GetComponent<Text>().text = "Was: $999\nNow: $1,499";
                 }
                 //Since the text may stay when looking at the selfs, we need this as a workaround
                 else if (whatIHit.collider.name.Equals("RightShelf"))
                 {
-                    GameObject.Find("OldPrice").GetComponent<Text>().text = "";
-                    GameObject.Find("NewPrice").GetComponent<Text>().text = "";
+                    GameObject.Find("ProductTitle").GetComponent<Text>().text = "";
+                    GameObject.Find("ProductPrice").GetComponent<Text>().text = "";
                 }
                 else if (whatIHit.collider.name.Equals("LeftShelf"))
                 {
-                    GameObject.Find("OldPrice").GetComponent<Text>().text = "";
-                    GameObject.Find("NewPrice").GetComponent<Text>().text = "";
+                    GameObject.Find("ProductTitle").GetComponent<Text>().text = "";
+                    GameObject.Find("ProductPrice").GetComponent<Text>().text = "";
                 }
 
             }
@@ -91,8 +91,8 @@ public class PlayerRaycasting : MonoBehaviour
         //If the raycaster isn't touching any of the boxes, we need to clear out the text
         else
         {
-            GameObject.Find("OldPrice").GetComponent<Text>().text = "";
-            GameObject.Find("NewPrice").GetComponent<Text>().text = "";
+            GameObject.Find("ProductTitle").GetComponent<Text>().text = "";
+            GameObject.Find("ProductPrice").GetComponent<Text>().text = "";
         }
     }
 }

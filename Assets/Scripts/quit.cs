@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class quit : MonoBehaviour
 {
@@ -14,7 +15,18 @@ public class quit : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape)){
-            Application.Quit();
+            GameObject.Find("QuitTitle").GetComponent<Text>().text = "Are you sure you want to Exit?'\n Yes(Y) | No (N)";
+
+            if(Input.GetKeyDown(KeyCode.Y)){
+                Application.Quit();
+            }
+
+            if(Input.GetKeyDown(KeyCode.N)){
+                Debug.Log("Pressed N");
+                GameObject.Find("QuitTitle").GetComponent<Text>().text = "";
+            }
+
+            
         }
 
     }
