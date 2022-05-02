@@ -15,19 +15,7 @@ public class quit : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape)){
-            GameObject.Find("QuitTitle").GetComponent<Text>().text = "Are you sure you want to Exit?'\n Yes(Y) | No (N)";
-
-            if(Input.GetKeyDown(KeyCode.Y)){
-                Application.Quit();
-            }
-
-            if(Input.GetKeyDown(KeyCode.N)){
-                Debug.Log("Pressed N");
-                GameObject.Find("QuitTitle").GetComponent<Text>().text = "";
-            }
-
-            
+            Application.Quit();
         }
-
     }
 }
