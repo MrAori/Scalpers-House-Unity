@@ -8,3 +8,7 @@ https://assetstore.unity.com/packages/essentials/starter-assets-first-person-cha
 https://assetstore.unity.com/packages/3d/vegetation/trees/mobile-tree-package-18866 - Mobile Tree Package
 https://assetstore.unity.com/packages/2d/textures-materials/nature/terrain-textures-pack-free-139542 - Terrain Textures Pack Free
 
+# No Build?
+
+You would need to make the build yourself due to the change of Unity's recent install fee change. For the time being, a build download will not be available until this change doesn't roll out.
+
