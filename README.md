@@ -10,5 +10,5 @@ https://assetstore.unity.com/packages/2d/textures-materials/nature/terrain-textu
 
 # No Build?
 
-You would need to make the build yourself due to the change of Unity's recent install fee change. For the time being, a build download will not be available until this change doesn't roll out.
+You would need to make the build yourself due to Unity's recent install fee changes. For the time being, a build download will not be available until this change doesn't roll out. Thanks Unity for screwing over your developers and other small companies that use your engine for their projects.
 
